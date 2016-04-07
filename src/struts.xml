@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+     <constant name="struts.i18n.encoding" value="utf-8"/>
+     <constant name="struts.devMode" value="true" />
+     <constant name="struts.ui.theme" value="simple" />
+     <!--Struts2中Action对象的创建交给spring完成-->
+     <constant name="struts.objectFactory" value="spring" />  
+     
+      <package name="score" namespace="/score" extends="struts-default" >
+	        <action name="score_*" class="scoreAction" method="{1}">
+	            <result name="message">/main.jsp</result>
+	            
+	        	<result name="show_view">/main.jsp</result>
+	        	<result name="detail_view">/detail.jsp</result>
+	        	<result name="edit_view">/edit.jsp</result>
+	        	
+	        	<result name="edit_message">/edit_message.jsp</result>
+	        </action>  
+	 </package> 
+<package name="user" namespace="/user" extends="struts-default">
+	        <action name="user_*" class="userAction" method="{1}">
+	        
+	        <result name="main_view" type="chain">
+	              <param name="actionName">score_showScore</param> 
+                  <param name="namespace">/score</param>   
+             </result>     
+               <result name="delete_message">/delete_message.jsp</result>    
+	        </action></package>
+  
+	 </struts>

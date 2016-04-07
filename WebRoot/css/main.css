@@ -1,0 +1,197 @@
+body{
+	font-family:"Microsoft Yahei",寰蒋闆呴粦,"Helvetica Neue",Arial,sans-serif;
+	font-size:16px;
+}
+a{
+	color: #777;
+	text-decoration:none;
+}
+a:focus,
+a:hover {
+	color: #b00;
+}
+header{
+	background:#fcfcfc;
+	height:120px;
+}
+header .account{
+	padding-right:200px;
+	text-align:right;
+	line-height: 40px;
+	color:white;
+	height:40px;
+	background:#31a8e6;
+	
+}
+header .account>a{
+	float:right;
+	padding-right:50px;
+	line-height: 40px;
+	color:white;
+	
+}
+header .logo{
+	float:left;
+	line-height: 40px;
+	font-size:40px;
+	color:red;
+}
+
+main{
+	margin-top:10px;
+}
+
+main .search-box{
+	height:30px;
+}
+
+main .input-group{
+	margin:20px 30px;
+}
+main ul{
+	width:1040px;
+	margin:0 auto;
+	padding-left: 0;
+	list-style: none;	
+}
+main ul li{
+
+	display:inline-block;
+}
+main ul li .add{
+	
+    float:left;
+	margin:30px 20px 0px 20px;
+	padding:5px;
+	width:300px;
+	height:250px;
+	border:4px solid silver;
+	border-radius:8px;
+	text-align:center;	
+}
+
+main ul li .add >a{
+
+	font-size:36px;
+	color:#31a8e6;
+	line-height:230px;
+}
+main ul li .add:hover{
+	border:4px solid gray;
+}
+main ul li img{
+	margin:30px 20px 0px 20px;
+	padding:5px;
+	width:300px;
+	height:250px;
+	border:4px solid silver;
+	border-radius:400px;
+}
+main ul li img:hover{
+	border:10px solid yellow;
+}
+main ul li p{
+	text-align:center;
+	line-height:10px;
+	
+}
+
+
+/*登陆页面*/
+.bg{
+	width:100%;
+	height:600px;
+	background-image:url('../images/2。png');
+	background-repeat:no-repeat;
+    -webkit-background-size:cover;   /*覆盖*/
+    -moz-background-size:cover;      /*覆盖*/
+    padding-top:30px;                /*图片顶边距*/
+
+	
+}
+.bg .login{
+	
+	margin:0 auto;/*一定自动居中，水平居中*/
+	width:500px;
+	padding:0 30px 30px 30px;
+	background-color: #fff;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
+    background-image: -webkit-linear-gradient(top, #fff, #eee);
+    background-image: -moz-linear-gradient(top, #fff, #eee);
+    background-image: -ms-linear-gradient(top, #fff, #eee);
+    background-image: -o-linear-gradient(top, #fff, #eee);
+    background-image: linear-gradient(top, #fff, #eee);  /*不同浏览器内核不同*/
+    -moz-border-radius: 8px;                              /*圆角  radius曲率*/
+    -webkit-border-radius: 8px;
+    border-radius: 8px;  
+    -webkit-box-shadow:
+          0 0 2px rgba(0, 0, 0, 0.2),
+          0 1px 1px rgba(0, 0, 0, .2),
+          0 3px 0 #fff,
+          0 4px 0 rgba(0, 0, 0, .2),
+          0 6px 0 #fff,  
+          0 7px 0 rgba(0, 0, 0, .2);
+    -moz-box-shadow:
+          0 0 2px rgba(0, 0, 0, 0.2),  
+          1px 1px   0 rgba(0,   0,   0,   .1),
+          3px 3px   0 rgba(255, 255, 255, 1),
+          4px 4px   0 rgba(0,   0,   0,   .1),
+          6px 6px   0 rgba(255, 255, 255, 1),  
+          7px 7px   0 rgba(0,   0,   0,   .1);
+    box-shadow:
+          0 0 2px rgba(0, 0, 0, 0.2),  
+          0 1px 1px rgba(0, 0, 0, .2),
+          0 3px 0 #fff,
+          0 4px 0 rgba(0, 0, 0, .2),
+          0 6px 0 #fff,  
+          0 7px 0 rgba(0, 0, 0, .2);
+}
+
+.bg .login h3{
+
+	color: #666;
+    padding:30px 160px;
+    letter-spacing: 4px;/*字符间距*/
+    font: normal 18px/1 "microsoft YaHei";/*字体*/
+    position: relative;/*相对定位*/
+}
+
+.bg .login h3:after, .bg .login h3:before{
+    background-color: #777;
+    content: "";
+    position: absolute;
+    height: 1px;
+    top: 40px;/*距顶边距*/
+    width: 130px;   
+}
+.bg .login h3:after
+{ 
+    background-image: -webkit-gradient(linear, left top, right top, from(#777), to(#fff));
+    background-image: -webkit-linear-gradient(left, #777, #fff);
+    background-image: -moz-linear-gradient(left, #777, #fff);
+    background-image: -ms-linear-gradient(left, #777, #fff);
+    background-image: -o-linear-gradient(left, #777, #fff);
+    background-image: linear-gradient(left, #777, #fff);      
+    right: 0;
+}
+
+.bg .login h3:before
+{
+    background-image: -webkit-gradient(linear, right top, left top, from(#777), to(#fff));
+    background-image: -webkit-linear-gradient(right, #777, #fff);
+    background-image: -moz-linear-gradient(right, #777, #fff);
+    background-image: -ms-linear-gradient(right, #777, #fff);
+    background-image: -o-linear-gradient(right, #777, #fff);
+    background-image: linear-gradient(right, #777, #fff);
+    left: 0;
+}
+
+.bg .login .input-group{
+	
+	margin:20px 30px;/*设置边距*/
+	
+}
+.bg .login .btn-login{
+	margin:0px 80px;
+	width:280px;
+}
